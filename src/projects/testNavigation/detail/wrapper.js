@@ -12,8 +12,8 @@ export default class DetailWrapper extends React.PureComponent {
     }
 
     handleGoDescription = () => {
-        console.log('ddddddd')
-        console.log(this.props.navigation)
+        // console.log('ddddddd')
+        // console.log(this.props.navigation)
         this.props.navigation.navigate('Description')
     }
 
