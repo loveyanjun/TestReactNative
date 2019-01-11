@@ -5,6 +5,10 @@ import {
 } from 'react-native'
 
 export default class Description extends React.PureComponent {
+    static navigationOptions = {
+        title: '描述'
+    }
+
     render () {
         return (
             <View>

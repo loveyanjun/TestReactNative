@@ -7,7 +7,11 @@ const DetailNavigators = createStackNavigator({
     Wrapper: WrapperScreen,
     Description: DescriptionScreen
 }, {
-    initialRouteName: 'Wrapper'
+    initialRouteName: 'Wrapper',
+    headerMode: 'none'
+    // defaultNavigationOptions: {
+    //     header: null
+    // }
 })
 
 const DetailAppContainer = createAppContainer(DetailNavigators)

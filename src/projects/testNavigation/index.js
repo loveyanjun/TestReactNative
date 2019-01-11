@@ -1,8 +1,6 @@
 import React from 'react'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 import HomeScreen from './home'
-// import DetailScreen from './detail/detail'
-// import DescriptionScreen from './detail/description'
 import DetailScreen from './detail/index'
 
 const Navigators = createStackNavigator({
@@ -13,7 +11,9 @@ const Navigators = createStackNavigator({
         screen: DetailScreen
     }
 }, {
-    initialRouteName: 'Home'
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+    }
 })
 
 const AppContainer = createAppContainer(Navigators)
